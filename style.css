@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+h1
+{
+    font-size: 5vh;
+    font-family: "Poppins", sans-serif;
+}
+.card-title
+{
+    font-size: 2.5vh;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+.fixed-card-size {
+    width: 400px;
+    /* Ancho fijo */
+    height: 570px;
+    /* Alto fijo */
+}
+
+.fixed-card-size img {
+    max-width: 75%;
+    width: auto;
+}
+
+.fixed-card-size .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card {
+    transition: transform 0.2s;
+    border: 10px;
+    border: 3px solid #000000;
+}
+
+
+ul
+{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5vh;
+}
+li
+{
+    list-style: none;
+}
+.btn {
+    margin: 3px;
+    box-sizing: border-box;
+    border: 10px;
+    border: 3px solid #000000;
+    color: rgb(7, 7, 7);
+    width: auto;
+    font-family: "Poppins", sans-serif;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+    border: 3px solid #9b9b9b;
+}
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+    /* Añade transición a la propiedad transform */
+}
+input[type="checkbox"]:checked {
+    background-color: rgb(129, 125, 125);
+    border-color: rgb(0, 0, 0);
+    color: white;
+    transform: rotate(360deg) scale(1.2);
+    /* Añade rotación y cambio de tamaño */
+}
+.form-control
+{
+    border: 10px;
+    border: 3px solid #000000;
+    font-family: "Poppins", sans-serif;
+    font-size: 3.5vh;
+    text-align: center;
+}
+@media (max-width: 375px)
+{
+    .fixed-card-size {
+        width: 100%;
+        /* Ancho completo */
+        height: auto;
+        /* Ajusta la altura automáticamente */
+    }
+    
+    .fixed-card-size img {
+        max-width: 100%;
+        /* Ajusta el tamaño máximo de las imágenes */
+    }
+    li{
+        font-size: 2vh;
+    }
+}
